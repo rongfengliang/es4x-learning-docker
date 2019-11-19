@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "description": "This is a ES4X empty project.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "es4x test index.test.js",
+    "postinstall": "es4x install",
+    "build": "tsc -w",
+    "start": "es4x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "name": "es4x-app",
+  "devDependencies": {
+    "@vertx/unit": "^3.8.3",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@vertx/core": "^3.8.3"
+  }
+}
