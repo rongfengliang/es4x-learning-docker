@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "This is a ES4X empty project.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "es4x test index.test.js",
     "postinstall": "es4x install",
