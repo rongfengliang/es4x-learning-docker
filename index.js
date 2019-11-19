@@ -1,13 +1,11 @@
 "use strict";
 /// <reference path="node_modules/@types/es4x.d.ts" />
+Object.defineProperty(exports, "__esModule", { value: true });
+var web_1 = require("@vertx/web");
+var app = web_1.Router.router(vertx);
+app.route('/').handler(function (ctx) {
+    ctx.response().end('Hello from Vert.x Web!');
+});
 vertx.createHttpServer()
-    .requestHandler(function (req) {
-    // var hello =  Java.type("Hello");
-    // // set the name
-    // hello.setName('Paulo');
-    // // get the name
-    // var name = hello.getName();
-    req.response()
-        .end("hello es4x");
-})
+    .requestHandler(app.handle)
     .listen(8090);

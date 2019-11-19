@@ -1,13 +1,12 @@
 /// <reference path="node_modules/@types/es4x.d.ts" />
 
+import { Router } from '@vertx/web';
+
+const app = Router.router(vertx);
+
+app.route('/').handler((ctx) => {
+  ctx.response().end('Hello from Vert.x Web!');
+});
 vertx.createHttpServer()
-  .requestHandler(req => {
-    // var hello =  Java.type("Hello");
-    // // set the name
-    // hello.setName('Paulo');
-    // // get the name
-    // var name = hello.getName();
-    req.response()
-      .end("hello es4x");
-  })
+  .requestHandler(app.handle)
   .listen(8090);

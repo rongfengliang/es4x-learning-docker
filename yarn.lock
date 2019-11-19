@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@vertx/auth-common@3.8.3":
+  version "3.8.3"
+  resolved "https://registry.npm.taobao.org/@vertx/auth-common/download/@vertx/auth-common-3.8.3.tgz#3d9e6935cc0a0900a7193f0e22a408be8f1a29df"
+  integrity sha1-PZ5pNcwKCQCnGT8OIqQIvo8aKd8=
+  dependencies:
+    "@vertx/core" "3.8.3"
+
+"@vertx/bridge-common@3.8.3":
+  version "3.8.3"
+  resolved "https://registry.npm.taobao.org/@vertx/bridge-common/download/@vertx/bridge-common-3.8.3.tgz#ccd58a1d79776b0fce98f840063e5b2435dba83c"
+  integrity sha1-zNWKHXl3aw/OmPhABj5bJDXbqDw=
+  dependencies:
+    "@vertx/core" "3.8.3"
+
 "@vertx/core@3.8.3", "@vertx/core@^3.8.3":
   version "3.8.3"
   resolved "https://registry.npm.taobao.org/@vertx/core/download/@vertx/core-3.8.3.tgz#588cc9667b4a60f32354870cd7750421400cf3ac"
@@ -13,6 +27,23 @@
   integrity sha1-CHEhmaVXQxAu8CpMEsEZG6zmXlE=
   dependencies:
     "@vertx/core" "3.8.3"
+
+"@vertx/web-common@3.8.3":
+  version "3.8.3"
+  resolved "https://registry.npm.taobao.org/@vertx/web-common/download/@vertx/web-common-3.8.3.tgz#4272483124c9709cda4cbb22027b24e25ed34edd"
+  integrity sha1-QnJIMSTJcJzaTLsiAnsk4l7TTt0=
+  dependencies:
+    "@vertx/core" "3.8.3"
+
+"@vertx/web@^3.8.3":
+  version "3.8.3"
+  resolved "https://registry.npm.taobao.org/@vertx/web/download/@vertx/web-3.8.3.tgz#951664314d7a11ca3bf267ab0d1023c0a1b6af8d"
+  integrity sha1-lRZkMU16Eco78merDRAjwKG2r40=
+  dependencies:
+    "@vertx/auth-common" "3.8.3"
+    "@vertx/bridge-common" "3.8.3"
+    "@vertx/core" "3.8.3"
+    "@vertx/web-common" "3.8.3"
 
 typescript@^3.7.2:
   version "3.7.2"
