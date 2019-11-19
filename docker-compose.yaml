@@ -3,5 +3,7 @@ services:
   app:
     build: ./
     image:  dalongrong/es4x:basic-learning
+    environment: 
+    - "N=2"
     ports:
     - "8090:8090"

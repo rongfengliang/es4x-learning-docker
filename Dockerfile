@@ -39,4 +39,6 @@ ENV N=2
 # Define custom java options for containers
 ENV JAVA_OPTS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseContainerSupport"
 # define the entrypoint
-ENTRYPOINT [ "./node_modules/.bin/es4x-launcher","-instances","${N}"]
+COPY entrypoint.sh /entrypoint.sh
+RUN  chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
