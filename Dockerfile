@@ -35,7 +35,8 @@ WORKDIR /usr/src/app
 # Bundle app source
 COPY . .
 EXPOSE 8090
+ENV N=2
 # Define custom java options for containers
 ENV JAVA_OPTS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseContainerSupport"
 # define the entrypoint
-ENTRYPOINT [ "./node_modules/.bin/es4x-launcher" ]
+ENTRYPOINT [ "./node_modules/.bin/es4x-launcher","-instances","${N}"]
